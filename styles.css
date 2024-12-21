@@ -1,0 +1,64 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: #07252d;
+    text-align: center;
+    margin-top: 200px;
+}
+
+h2 span:nth-child(even){
+    animation-delay: 0.4s;
+    -webkit-box-reflect: below -42px linear-gradient #0004;
+}
+
+p{
+    font-size: 3em;
+    color: red;
+    animation-name: animat; 
+    animation-duration: 5s; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite; 
+}
+
+h2{
+    font-size: 6em;
+    color: #0e3742;
+    text-transform: uppercase;
+    animation-name: animate; 
+    animation-duration: 5s; 
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite; 
+}
+
+@keyframes animate {
+    0%  {
+        color:  #0e3742; text-shadow: none;
+    } 
+    100%{
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4, 0 0 80px #03bcf4, 0 0 160px #03bcf4, 0 0 400px #03bcf4;
+    }
+
+}
+
+@media screen and (min-width: 320px){
+    #id{
+        margin-left: 50px;
+    }
+    body{
+        
+    }
+}
+
+@keyframes animat {
+    0%  {
+        color: red; text-shadow: none;
+    } 
+    100%{
+        color: #fff;
+        text-shadow: 0 0 10px red, 0 0 20px red, 0 0 40px red, 0 0 80px red, 0 0 160px red, 0 0 400px red;
+    }
+
+}
